@@ -18,16 +18,16 @@
         <!--<Label text="输出文件名：" prefWidth="100" HBox.hgrow="ALWAYS"/>-->
         <!--<TextField fx:id="tf_file_name" HBox.hgrow="ALWAYS"/>-->
         <CheckBox text="保持比例缩放" fx:id="cb_keepAspectRatio" selected="true" prefWidth="100" HBox.hgrow="ALWAYS"/>
-
+        <Button text="转换" onAction="#switchFormat"/>
     </HBox>
 
-    <Button text="转换" onAction="#switchFormat"/>
     <HBox>
         <Label text="容差值：" prefWidth="50" HBox.hgrow="ALWAYS"/>
-        <TextField fx:id="tf_allow_dis" text="1" />
+        <TextField fx:id="tf_allow_dis" text="1"/>
         <Button text="去底色" onAction="#removeBackground" HBox.hgrow="ALWAYS"/>
     </HBox>
     <Button text="圆形图片" onAction="#round"/>
+    <Button text="百度图片翻译" onAction="#translate"/>
+    <!--<ImageView fx:id="iv_show" fitWidth="500" fitHeight="500"/>-->
     <Label fx:id="lb_out_path"/>
-    <ImageView fx:id="iv_show"/>
 </VBox>
